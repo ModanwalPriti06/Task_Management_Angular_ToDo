@@ -79,3 +79,5 @@ export const routes: Routes = [
 - inject http client
 - add server in package.json
 - app.config.ts add provideHttpClient()
+
+## handle update and complete task
