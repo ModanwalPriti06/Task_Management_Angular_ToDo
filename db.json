@@ -39,7 +39,7 @@
     {
       "id": "4344",
       "title": "Hello",
-      "completed": false,
+      "completed": true,
       "important": true
     },
     {

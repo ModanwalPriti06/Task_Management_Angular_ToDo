@@ -1,5 +1,13 @@
 <h1>Task Management Project In Angular</h1>
 
+## what we learn in this project
+- Routing
+- Searching- debouncing
+- Update and Create Todo - Http
+- OnInit 
+- Loop
+- Define Variable
+
 ## Create Project
 
 - ng new <project_name>
