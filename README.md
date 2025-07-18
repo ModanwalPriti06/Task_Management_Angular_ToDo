@@ -81,3 +81,23 @@ export const routes: Routes = [
 - app.config.ts add provideHttpClient()
 
 ## handle update and complete task
+
+## add debouncing
+
+```
+export class Header {
+  searchTerm: string = ''
+  searchControl =  new FormControl();
+
+  // @Output() search = new EventEmitter<string>();
+  stateService = inject(State)
+
+  ngOnInit(){
+    this.searchControl.valueChanges.pipe(debounceTime(250)).subscribe((value)=>{
+      // console.log(value)
+      this.stateService.searchSub.next(value || "")
+    })
+  }
+  
+}
+```
