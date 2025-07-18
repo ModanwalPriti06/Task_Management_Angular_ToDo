@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, inject, Output } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { State } from '../../services/state';
+import { debounceTime } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -18,7 +19,7 @@ export class Header {
   stateService = inject(State)
 
   ngOnInit(){
-    this.searchControl.valueChanges.subscribe((value)=>{
+    this.searchControl.valueChanges.pipe(debounceTime(250)).subscribe((value)=>{
       // console.log(value)
       this.stateService.searchSub.next(value || "")
     })

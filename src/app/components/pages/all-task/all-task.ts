@@ -26,7 +26,7 @@ export class AllTask {
       } else { 
         this.taskList = this.initialTaskList;
       }
-      // console.log('search value',val)
+      console.log('search value',val)
     })
     
   }
