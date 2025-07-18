@@ -11,7 +11,7 @@
 # Running part
 - run one terminal: ng serve
 - this image
-![alt running](<angular run.png>)
+<img width="1734" height="1120" alt="angularrun" src="https://github.com/user-attachments/assets/a8f1ea2f-4349-49c4-9e1b-33ef1fef7eaf" />
 
 ## Create Project
 
