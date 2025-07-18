@@ -8,6 +8,11 @@
 - Loop
 - Define Variable
 
+# Running part
+- run one terminal: ng serve
+- this image
+![alt running](<angular run.png>)
+
 ## Create Project
 
 - ng new <project_name>
